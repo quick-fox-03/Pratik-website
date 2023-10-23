@@ -35,15 +35,15 @@
             font-size: 28px;
         }
         #ending .container, #goals .container,#hobbies .container{
-            margin-top: 50px;
+            margin-top: 75px;
         }
         .artbox{
             display: flex;
+            flex-wrap: nowrap;
             gap: 20px;
         }
         .artbox .box{
-            height: 600px; width: 600px;
-            /* border: 1px solid #071724; */
+            height: 600px; width: 300px;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -54,12 +54,18 @@
             filter: drop-shadow(0px 0px 5px white);
         }
         @media (max-width: 768px){
-            .artbox{
+           .artbox{
                 display: flex;
+                flex-wrap: nowrap;
                 flex-direction: column;
-                gap:10px
             }
-            
+            .artbox .box{
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+            .artbox img{
+                float: left;
+            }
         }
     </style>
 </head>
