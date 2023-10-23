@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Exo+2:wght@300&family=Libre+Baskerville&family=Martian+Mono:wght@300&family=Poppins:wght@200;300&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,#071724,black,#071724,black);
+            color: white;
+            font-family: 'Caveat', cursive;
+            font-family: 'Exo 2', sans-serif;
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Martian Mono', monospace;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 20px; 
+        }
+        .greeting-hero{
+            background-image: url(https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center;
+            background-size: 100% 100%; 
+            position: relative;
+            height: 100vh;
+            width: 100vw;            
+        }
+        .title-text{
+            font-size: 50px;
+        }
+        .subtitle-text{
+            font-size: 28px;
+        }
+        #ending .container, #goals .container,#hobbies .container{
+            margin-top: 50px;
+        }
+        .artbox{
+            display: flex;
+            gap: 20px;
+        }
+        .artbox .box{
+            height: 600px; width: 600px;
+            /* border: 1px solid #071724; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .artbox img{
+            filter: drop-shadow(0px 0px 5px white);
+        }
+        @media (max-width: 768px){
+            .artbox{
+                display: flex;
+                flex-direction: column;
+                gap:10px
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary rounded" style="z-index: 1; width: 50%; left: 25%; top:10px;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pratik's Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>    
+    <section id="greeting">
+        <div class="greeting-hero">
+            <div class="px-4 py-5 my-5 text-center">
+                <img style="border-radius: 50%; filter: drop-shadow(0 0 20px white)" class="d-block mx-auto mb-4" src="../assets/photo-of-me.png" alt="Pratik's Photo" width="200" height="200">
+                <h1 class="name title-text" style="color: white;">Meet Pratik</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4 subtitle-text" style="text-shadow: 0 0 8px black;">Hey friend, welcome to my corner of the internet! Happy to have you here, so let's explore together.<br/><br/> I am Pratik Anand, a fellow programming student, an aspiring web developer, a fan of movies, video game enthusiast and intermittent artist.</p>
+                </div>
+                </div>
+        </div>
+        <div class="container">
+            <h2 class="intro" style="font-size: 40px;">My story</h2>
+        <hr/>
+        <p class="intro-content">It's hard to decide where to begin my story.
+            <br/><br/>I come from the city of Gwalior, state of Madhya Pradesh, India. After graduating high school from Delhi Public School, I went on to pursue a Bachelor of Technology degree in the field of Computer Science and Engineering at VIT University, Vellore.
+            <br/>After some basic programming knowledge, I soon delved into the world of web development, as I wanted to build something that I could interact with, that I could see and say "Yes, I built this stuff". And throughout time, I have learnt that the best way of learning programming is just by building things.</p> 
+            <p> 
+                I mean, can anyone truly learn how to build houses out of Lego, if they keep only learning how the bricks are made?
+                <br/>Can they learn how to sketch beautiful arts, when they just keep learning how a pencil can create lines?
+            </p>
+        <p>I still have a lot to learn, a lot to do, and this story is far from concluded. I will keep this site updated, with whatever interesting stuff that happens.
+        </p>    
+        </div>
+    </section>
+    <section id="hobbies">
+        <div class="container">
+            <h2 class="hobbies-hero">Meet my other side, the artist...</h2>
+            <hr/>
+            <p>You might have already come across my small-scale front-end web design projects that showcase my programming skills, but have you seen my drawings?
+                <br/>No you have not my friend!
+            </p>
+            <div class="artbox">
+                <div class="box csm">
+                    <img src="../assets/csm.jpg" alt="Chainsaw Man sketch" height="500px" width="400px"/>
+                    <p>This is a sketch of Chainsaw Man, a popular character in Japanese manga and anime. <br/> One of the best I ever did while being in a class :P.</p>
+                </div>
+                <div class="box mul">
+                    <img src="../assets/sketch-fixed.jpg" alt="Chainsaw Man sketch" height="500px" width="400px"/>
+                    <p>These are just some characters I drew from my imagination, while taking some inspirations from several fictional characters.</p>
+                </div>
+                <div class="box war">
+                    <img src="../assets/warrior-with-horse.jpg" alt="Chainsaw Man sketch" height="500px" width="400px"/>
+                    <p>Another one of my old sketches, I never got to finish it...You can tell by looking at the horse in the back LOL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="goals">
+        <div class="container">
+            <h2>Goals?</h2>
+            <hr/>
+            <p>
+                I want to...
+                <ul>
+                    <li>become a great web developer.</li>
+                    <li>become a great sketch artist.</li>
+                    <li>have a cat as pet.</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+    <section id="ending">
+        <div class="container">
+            <h2>Farewell, friend</h2>
+            <hr/>
+            <p>Thank you for visiting my website. I sure hope you liked my work. In case you want to contact me, here's my <a href="mailto: pratikanand14dec@gmail.com">e-mail.</a>
+            <br/>Visit my contact page, link in the Navbar at top, for more details. 
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <footer style="font-size: medium;">
+            <p>Credit to <a href="https://unsplash.com/@nathananderson">Nathan Anderson</a> at <a href="https://unsplash.com/">Unsplash.com</a> for the background image.</p>
+        </footer>        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
